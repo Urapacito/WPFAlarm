@@ -1,0 +1,18 @@
+﻿<Window x:Class="Alarm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Alarm"
+        mc:Ignorable="d"
+        Title="Countdown Timer" Height="200" Width="300">
+    <Grid>
+        <Label x:Name="CountdownLabel" Content="00:00:00" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="32" Margin="23,48,0,0"/>
+        <TextBox x:Name="TimeInput" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="33,105,0,0" Width="108"/>
+        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="212,33,0,0" Click="StartButton_Click" Width="54"/>
+        <Button x:Name="PauseButton" Content="Pause" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="212,73,0,0" Click="PauseButton_Click" Width="54"/>
+        <Button x:Name="StopButton" Content="Stop" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="212,113,0,0" Click="StopButton_Click" Width="54"/>
+        <Label x:Name="RepeatLabel" Content="Repeat every day" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,138,0,0"/>
+        <CheckBox x:Name="RepeatCheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="174,143,0,0"/>
+    </Grid>
+</Window>
